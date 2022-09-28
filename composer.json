@@ -1,0 +1,32 @@
+{
+    "name": "dragonmantank/plinth",
+    "description": "A base layer for building SDKs",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Dragonmantank\\Plinth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Chris Tankersley",
+            "email": "chris@ctankersley.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "psr/http-message": "^1.0",
+        "psr/http-client": "^1.0",
+        "laminas/laminas-diactoros": "^2.17",
+        "php-http/discovery": "^1.14"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.11",
+        "phpunit/phpunit": "^9.5",
+        "php-http/guzzle7-adapter": "^1.0"
+    },
+    "scripts": {
+        "cs-fix": "vendor/bin/php-cs-fixer fix --rules=@PSR12 src/"
+    }
+}
